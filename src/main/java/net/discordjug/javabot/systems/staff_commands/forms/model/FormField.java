@@ -1,6 +1,7 @@
 package net.discordjug.javabot.systems.staff_commands.forms.model;
 
 import java.util.Objects;
+
 import net.dv8tion.jda.api.components.textinput.TextInput;
 import net.dv8tion.jda.api.components.textinput.TextInputStyle;
 
@@ -21,7 +22,7 @@ import net.dv8tion.jda.api.components.textinput.TextInputStyle;
  * @param style       text input style.
  * @param value       initial field value. Can be null to indicate no inital
  *                    value.
- * @param id          form id.
+ * @param id          form field id.
  */
 public record FormField(String label, int max, int min, String placeholder, boolean required, TextInputStyle style,
 		String value, long id) {
